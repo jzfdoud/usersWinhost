@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <script src="js/requestLine-create.js"></script>
+</head>
+<body>
+    <h3>Create RequestLine</h3>
+    <table class="table table-sm">
+        <tr>
+            <th>Id</th>
+            <td><input id="pid" type="number" value="0" disabled></td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td><input id="pquant" type="number" size="30"></td>
+        </tr>
+        <tr>
+            <th>ProductId</th>
+            <td><input id="ppid" type="number" value="24"></td>
+        </tr>
+        <tr>
+            <th>RequestId</th>
+            <td><input id="prid" type="number" value="7"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="save()" class="btn btn-primary">Save</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

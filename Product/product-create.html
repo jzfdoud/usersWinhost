@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="js/product-create.js"></script>
+</head>
+<body onload="vendors()">
+    <h3>Create Product</h3>
+    <table class="table table-sm">
+        <tr>
+            <th>Id</th>
+            <td><input id="pid" type="number" value="0" disabled></td>
+        </tr>
+        <tr>
+            <th>PartNbr</th>
+            <td><input id="ppartnbr" type="text" size="30"></td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td><input id="pname" type="text" size="30"></td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td><input id="pprice" type="number" size="decimal(12,2)"></td>
+        </tr>
+        <tr>
+            <th>Unit</th>
+            <td><input id="punit" type="text" size="30"></td>
+        </tr>
+        <tr>
+            <th>PhotoPath</th>
+            <td><input id="pphotopath" type="text" size="30"></td>
+        </tr>
+        <tr>
+            <th>Vendor</th>
+            <td><select id="pvendors" ></select>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="save()" class="btn btn-primary">Save</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
